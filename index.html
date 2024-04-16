@@ -6,8 +6,8 @@
     <link rel="icon" href="tubbs.webp">
   </head>
   <body>
-    <section>
-        <main>
+    <main>
+        <section>
             <header>
                 <h1>Meeting Minutes 04.15.2024</h1>
             </header>
@@ -25,10 +25,10 @@
             <details>
                 <summary>In-depth Recap</summary>
                 <p>Met with group to discuss upcoming assignment such as: roles, team video, logo, and Github page. <br>
-                    Started group bonding activity: <em>One Night Ultimate Werewolf.</em> Discussed next availability and meeting</em>
+                    Started group bonding activity: <em>One Night Ultimate Werewolf.</em> Discussed next availability and meeting
                 </p>
             </details>
-            <label for="mascot">Choose Mascot from List:</label>
+            <label for="mascot-picker">Choose Mascot from List:</label>
             <input list="mascot" id="mascot-picker"/>
             <datalist id="mascot">
                 <option value="garlic"></option>
@@ -45,8 +45,8 @@
             <div>
                 <b>Vote for Team Logo: 04.15 @ 11:59PM</b>
             </div>
-        </main>
-    </section>
+        </section>
+    </main>
     <hr>
     <div>
         <h2><i>Upcoming</i></h2>
@@ -61,7 +61,7 @@
             <label for="name">Role:</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="feedback">Feedback: </label>
-            <textarea type="text" name="feedback"></textarea> <br>
+            <textarea id="feedback"></textarea> <br>
             <label for="productive">Productive:</label>
             <input type="checkbox" id="productive"><br>
             <input type="radio">Meeting Length Too Long <br>
@@ -71,7 +71,7 @@
             <input type="date" id="pick-date">
         </fieldset>
     </form>
-    <h3>Group Video
+    <h3>Group Video</h3>
         <video controls>
             <source src="video.mp4" type="video/mp4">
         </video>
@@ -79,7 +79,6 @@
         <audio controls>
             <source src="audio.mp3">
         </audio>
-    </h3>
     <hr>
     <h1>Bonus</h1>
     <footer>
