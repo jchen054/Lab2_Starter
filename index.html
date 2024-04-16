@@ -7,43 +7,45 @@
   </head>
   <body>
     <section>
-        <header>
-            <h1>Meeting Minutes 04.15.2024</h1>
-        </header>
-        <ul>
-            <li>Create Github</li>
-            <li>Role Assignemnt</li>
-            <li>Introductory Video</li>
-            <li>Group Bonding Event</li>
-        </ul>
-        <details>
-            <summary>In-depth Recap</summary>
-            <p>Met with group to discuss upcoming assignment such as: roles, team video, logo, and Github page. <br>
-                Started group bonding activity: <em>One Night Ultimate Werewolf.</em> Discussed next availability and meeting</em>
-            </p>
-        </details>
-        <label for="mascot">Choose Mascot from List:</label>
-        <input list="mascot" id="mascot"/>
-        <datalist id="mascot">
-            <option value="garlic"></option>
-            <option value="cat"></option>
-            <option value="22 Taylor Swift theme"></option>
-        </datalist><br>
-        <label for="meeting">Choose availability:</label>
-        <select name="meeting" id="meeting">
-            <option >Tuesday after class</option>
-            <option>Thursday after class</option>
-            <option>Saturday at 5PM</option>
-            <option>Sunday at 6PM</option>
-        </select>
-        <div>
-            <b>Vote for Team Logo: 04.15 @ 11:59PM</b>
-        </div>
-        <figure>
-            <img src="CAT.png">
-            <figcaption>Honorary Group Member</figcaption>
-        </figure>
-        <button type="button"><strong>Click to Pet</strong></button> 
+        <main>
+            <header>
+                <h1>Meeting Minutes 04.15.2024</h1>
+            </header>
+            <nav>
+                <a href="https://github.com/cse110-sp24-group22">Github Org</a> |
+                <a href="https://github.com/cse110-sp24-group22/cse110-sp24-group22/blob/main/admin/team.md">Team Page</a> |
+                <a href="https://www.w3.org/Provider/Style/dummy.html">Slack Invite (not real invite)</a>
+            </nav>
+            <ul>
+                <li><span>Create Github</span></li>
+                <li>Role Assignemnt</li>
+                <li>Introductory Video</li>
+                <li>Group Bonding Event</li>
+            </ul>
+            <details>
+                <summary>In-depth Recap</summary>
+                <p>Met with group to discuss upcoming assignment such as: roles, team video, logo, and Github page. <br>
+                    Started group bonding activity: <em>One Night Ultimate Werewolf.</em> Discussed next availability and meeting</em>
+                </p>
+            </details>
+            <label for="mascot">Choose Mascot from List:</label>
+            <input list="mascot" id="mascot-picker"/>
+            <datalist id="mascot">
+                <option value="garlic"></option>
+                <option value="cat"></option>
+                <option value="22 Taylor Swift theme"></option>
+            </datalist><br>
+            <label for="meeting">Choose availability:</label>
+            <select name="meeting" id="meeting">
+                <option >Tuesday after class</option>
+                <option>Thursday after class</option>
+                <option>Saturday at 5PM</option>
+                <option>Sunday at 6PM</option>
+            </select>
+            <div>
+                <b>Vote for Team Logo: 04.15 @ 11:59PM</b>
+            </div>
+        </main>
     </section>
     <hr>
     <div>
@@ -53,17 +55,22 @@
             <li>Plan out Project</li>
         </ol>
     </div>
-    <footer>
-        <form>
-            <fieldset>
-                <label for="name">Role:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="feedback">Feedback: </label>
-                <textarea type="text" name="feedback"></textarea> 
-            
-            </fieldset>
-        </form>
-    </footer>
+    <form>
+        <h2>Improvements</h2>
+        <fieldset>
+            <label for="name">Role:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="feedback">Feedback: </label>
+            <textarea type="text" name="feedback"></textarea> <br>
+            <label for="productive">Productive:</label>
+            <input type="checkbox" id="productive"><br>
+            <input type="radio">Meeting Length Too Long <br>
+            <input type="radio">Meeting Length Too Short <br>
+            <input type="radio">Meeting Length Right Length <br>
+            <label for="pick-date">Propose New Meeting Time: </label>
+            <input type="date" id="pick-date">
+        </fieldset>
+    </form>
     <h3>Group Video
         <video controls>
             <source src="video.mp4" type="video/mp4">
@@ -73,6 +80,14 @@
             <source src="audio.mp3">
         </audio>
     </h3>
-
+    <hr>
+    <h1>Bonus</h1>
+    <footer>
+        <figure>
+            <img src="CAT.png">
+            <figcaption>Honorary Group Member</figcaption>
+        </figure>
+        <button type="button"><strong>Click to Pet</strong></button> 
+    </footer>
   </body>
 </html>
