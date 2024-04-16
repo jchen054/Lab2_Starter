@@ -22,15 +22,13 @@
                 Started group bonding activity: <em>One Night Ultimate Werewolf.</em> Discussed next availability and meeting</em>
             </p>
         </details>
-        <form method="get">
-           <label for="mascot">Choose Mascot</label>
-            <input list="mascot" id="mascot">
-            <datalist id="mascot">
-                <option value="garlic">
-                <option value="cat">
-                <option value="22 Taylor Swift theme"></option>
-            </datalist>
-        </form>
+        <label for="mascot">Choose Mascot from List:</label>
+        <input list="mascot" id="mascot"/>
+        <datalist id="mascot">
+            <option value="garlic"></option>
+            <option value="cat"></option>
+            <option value="22 Taylor Swift theme"></option>
+        </datalist><br>
         <label for="meeting">Choose availability:</label>
         <select name="meeting" id="meeting">
             <option >Tuesday after class</option>
@@ -67,7 +65,7 @@
         </form>
     </footer>
     <h3>Group Video
-        <video>
+        <video controls>
             <source src="video.mp4" type="video/mp4">
         </video>
         <figcaption>Meeting Audio:</figcaption>
